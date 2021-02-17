@@ -4,8 +4,6 @@
 #include "shortcutcreator.hpp"
 #include "win32_api.hpp"
 
-// this code is, like, released under the CC0 license, or something
-
 #ifdef UNICODE
     #define _UNICODE
 #endif
