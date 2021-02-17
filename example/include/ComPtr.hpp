@@ -5,7 +5,7 @@ struct ComPtr
 {
     T *p{};
 
-    ~ComPtr() { p->Release(); }
+    ~ComPtr() { if (p != nullptr) p->Release(); }
 
     T  &operator*() const { return *p; }
     T **operator&() const { return &p; }
